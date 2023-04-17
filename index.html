@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GroupChat App</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form class="form-username">
+      <h1>Join Chatroom</h1>
+      <p>Username</p>
+      <input type="text" id="username-input" placeholder="Username" />
+      <button id="join-btn" type="submit">Join Chat</button>
+    </form>
+    <div class="chatroom-container">
+      <div class="chatroom-header">CHATROOM</div>
+      <div class="messages" id="messages-container">
+      </div>
+      <div class="msg">
+        <input type="text" placeholder="Enter Message" id="message-input" />
+        <button id="send-btn">Send</button>
+        <button id="exit-btn">Exit</button>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

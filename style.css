@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* 1rem = 16px */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(101, 8, 101), violet, rgb(242, 236, 242), rgb(195, 47, 195), rgb(69, 5, 69));
+}
+
+.form-username {
+  /* border: 1.5px solid #000; */
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px 6px rgb(104, 9, 81);
+  padding: 1.5rem 1rem;
+  width: 80%;
+  display: block;
+  max-width: 300px;
+}
+
+.form-username h1 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.form-username p {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+#username-input {
+  border: 1px solid #000;
+  padding: 0.25rem 0.5rem;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  width: 90%;
+}
+
+#username-input:focus {
+  outline: none;
+}
+
+#join-btn,
+.send-btn {
+  background-color: rgb(57, 6, 57);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px 2px rgb(214, 65, 165);
+  cursor: pointer;
+}
+
+.chatroom-container {
+  display: none;
+  height: 85vh;
+  /* border: 1px solid #000; */
+  width: 90%;
+}
+
+.chatroom-header {
+  background-color: #051b09;
+  /* box-shadow: 1px 2px 3px 4px white; */
+  padding: 0.5rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.messages {
+  /* display: flex; */
+  /* flex-direction: column; */
+  height: 80vh;
+  overflow-y: auto;
+  background: linear-gradient(to right, green, rgb(134, 221, 134), white, rgb(56, 200, 56), green);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px 2px rgb(70, 214, 65);
+  border: none;
+}
+
+.message {
+  background-color: #e1e1e1;
+  width: fit-content;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  /* background-color: red; */
+}
+
+.message.sent {
+  /* align-self: flex-end; */
+  /* background:; */
+
+  float: right;
+  clear: both;
+  background-color: rgb(63, 8, 5);
+  box-shadow: 1px 2px 3px 4px;
+  border-radius: 0 10px 10px 10px;
+  padding: 10px;
+  color: white;
+}
+
+.message.received {
+  float: left;
+  clear: both;
+  background-color: rgb(45, 8, 91);
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 1px 2px 3px 4px;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+#send-btn {
+  padding: 10px;
+  color: white;
+  background-color: rgb(4, 36, 4);
+  margin-left: 10px;
+  border-radius: 5px;
+  width: 100px;
+
+}
+
+#exit-btn {
+  padding: 10px;
+  color: white;
+  background-color: rgb(118, 9, 9);
+  margin-left: 10px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+#message-input {
+  padding: 10px;
+  margin: auto;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  width: 400px;
+}
+
+.msg {
+  /* margin-top: 10px; */
+  background: linear-gradient(rgb(0, 255, 4), rgb(90, 224, 106), rgb(255, 255, 255), rgb(98, 217, 120), rgb(0, 255, 34));
+  border-radius: 5px;
+}
